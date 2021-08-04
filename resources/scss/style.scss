@@ -1,0 +1,121 @@
+@import "./variables";
+@import "~noty/src/noty.scss";              //for notifications-pop-up
+@import "~noty/src/themes/mint.scss";       //when "add" button clicked
+
+body{
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+    // height: 3000px;
+}
+
+nav li a{
+    transition: $smooth;
+}
+
+nav li:last-child a{
+    background: $primary;
+}
+
+nav li:hover{
+    color: $primary;
+}
+
+nav li:last-child a:hover{
+    background: $primary-hover;
+}
+
+section.main-page{
+    background: $secondary;
+}
+
+.size{
+    background: rgb(241, 201, 148);
+}
+
+.add-to-cart{
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+}
+
+.add-to-cart:focus{
+    outline: none;
+}
+
+.add-to-cart:hover{
+    background: $primary;
+    border-color: $pure;
+    color: $pure;
+}
+
+.menu-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);                  /* can also be written as 1fr 1fr 1fr */
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+.btn-primary{
+    background: $primary;
+    transition: $smooth;
+}
+
+.btn-primary:hover{
+    background: $primary-hover;
+}
+
+.cart{
+    background: $secondary;
+}
+
+.cart .amount{
+    color: $primary;
+}
+
+section.login{
+    background: $secondary;
+    min-height: calc(100vh - 170px);
+}
+
+section.login a{
+    color: $primary;
+}
+
+section.login a:hover{
+    color: $primary-hover;
+}
+
+.noty_theme__mint{
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
+
+a.link{
+    color: $primary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: $primary;
+    color: white;
+    color: black;
+    text-align: center;
+    margin-top: 4rem;
+  }
